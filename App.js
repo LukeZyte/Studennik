@@ -1,5 +1,10 @@
-import MainNavigation from "./MainNavigation";
+import AppPreparation from "./AppPreparation";
+import AuthCtxProvider from "./store/authCtx";
 
 export default function App() {
-  return <MainNavigation />;
+  return (
+    <AuthCtxProvider>
+      <AppPreparation />
+    </AuthCtxProvider>
+  );
 }
